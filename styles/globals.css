@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* removes default browser on-focus CSS stylings */
+
+*:focus {
+  outline: none;
+}
+
+@keyframes hover-arrow-fade {
+  0% { 
+    transform: translateX(0px); 
+    opacity: 0; 
+  }
+  50% { 
+    transform: translateX(8px);  
+    opacity: 100;
+  }
+  100% { 
+    transform: translateX(0px); 
+    opacity: 0; 
+  }
+}
+
+.link-hover-arrow {
+  animation: hover-arrow-fade 2s infinite;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    transition-property: all;
+  }
+
+/* track */
+::-webkit-scrollbar-track {
+  background: var(--lightestgrey); 
+}
+
+/* scrollbar */
+::-webkit-scrollbar-thumb {
+  background: #6B7280; 
+  border-radius: 5px;
+}
+
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #D1D5DB;
+}
+
+/* styles the border-like elements under each "option" (synonyms, rhymes, describes) */
+.option-subheader {
+  background-image: linear-gradient(to right, transparent 35%, #E5E7EB 43%, #E5E7EB 57%, transparent 65%);
+}
+
+/* "awaiting icon" idle phrase on home screen that fades in and out prior to initial user query */
+.loader {
+    animation: color-change 5s infinite;
+  }
+ 
+@keyframes color-change {
+  0% { color: #6B7280; }
+  50% { color: #1F2937; }
+  100% { color: #6B7280; }
+}
