@@ -8,11 +8,11 @@ Makes calls to the [Datamuse API]("https://www.datamuse.com/api/").
 ## Installation and Setup
 
 This project was launched with Next.js and TailwindCSS. [View the official setup 
-docs on the TailwindCSS website.]("https://tailwindcss.com/docs/guides/nextjs")
+docs on the TailwindCSS website.](https://tailwindcss.com/docs/guides/nextjs)
 
 ## API used
 
-This project makes calls to the [Datamuse API]("https://www.datamuse.com/api/"). No key is required.
+This project makes calls to the [Datamuse API](https://www.datamuse.com/api/). No key is required.
 
 ## Technologies used
 
